@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">JLOO BARBER-SHOP</string>
+    <string name="input_email_address">EMAIL ADDRESS</string>
+    <string name="input_password">PASSWORD</string>
+    <string name="btn_login">Login</string>
+</resources>

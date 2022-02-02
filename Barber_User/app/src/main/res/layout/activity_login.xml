@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"/>
+
+
+    <LinearLayout
+        android:id="@+id/li_center"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_user"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#e7e6e6">
+
+            <EditText
+                android:id="@+id/login_email_user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="4dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/input_email_address"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textColorHint="#e7e6e6">
+
+                <EditText
+                    android:id="@+id/login_password_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/white"
+                    android:hint="@string/input_password"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/show_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="40.5dp"
+                android:layout_marginTop="2.6dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:src="@drawable/eye_icon"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/btn_color"
+            android:text="@string/btn_login"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_donthave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li_center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="DONT HAVE ACCOUNT"/>
+
+        <TextView
+            android:id="@+id/btn_go_register_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/li_center"
+            android:textColor="@color/app_color"
+            android:background="#FFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="REGISTER"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

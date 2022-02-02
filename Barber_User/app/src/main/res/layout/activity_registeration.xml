@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:scaleType="center"
+        android:src="@drawable/back_login" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/img_user_profile_register"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="70dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@drawable/select_imge_icon"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/li_center"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_user"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:textColorHint="#e7e6e6">
+
+            <EditText
+                android:id="@+id/register_name_user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="10dp"
+                android:hint="NAME"
+                android:background="@color/white"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_user"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColorHint="#e7e6e6">
+
+            <EditText
+                android:id="@+id/register_phone_user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="10dp"
+                android:hint="Phone Number"
+                android:background="@color/white"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_user"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColorHint="#e7e6e6">
+
+            <EditText
+                android:id="@+id/register_email_user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000"
+                android:hint="EMAIL ADDRESS"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:background="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_user"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColorHint="#e7e6e6">
+
+            <EditText
+                android:id="@+id/register_password_user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:drawablePadding="10dp"
+                android:hint="PASSWORD"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/btn_register_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#BEC0C1"
+            android:layout_marginTop="20dp"
+            android:text="RESGISTER"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_donthave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li_center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ALREADY HAVE ACCOUNT"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_go_login_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li_center"
+            android:layout_centerHorizontal="true"
+            android:background="#FFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="#4BB7D1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
